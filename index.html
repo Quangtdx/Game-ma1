@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Horror Intro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro">
+    <div id="bloody-text">CHÀO MỪNG TỚI CÂU CHUYỆN MA ÁM</div>
+    <button id="startBtn">Bắt đầu</button>
+  </div>
+
+  <div id="dialogue" style="display:none;">
+    <div id="npc-img"></div>
+    <p id="dialogue-text"></p>
+    <button id="nextBtn">Tiếp tục</button>
+  </div>
+
+  <div id="whiteout"></div>
+  <div id="room" style="display:none;">
+    <p id="room-msg"></p>
+    <button id="finishBtn">Ấn vào đây</button>
+  </div>
+
+  <div id="countdown"></div>
+  <img id="jumpscare" src="assets/jumpscare.png" />
+  <audio id="scream" src="assets/scream.mp3"></audio>
+  <audio id="creepy" src="assets/creepy.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>

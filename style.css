@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  overflow: hidden;
+  text-align: center;
+}
+#intro {
+  margin-top: 20%;
+}
+#bloody-text {
+  font-size: 32px;
+  color: red;
+  text-shadow: 0 0 20px red;
+  animation: pulse 2s infinite;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: darkred;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+#dialogue {
+  margin-top: 10%;
+  font-size: 20px;
+  color: white;
+}
+#npc-img {
+  background: url('assets/npc.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+}
+#whiteout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+#room {
+  margin-top: 15%;
+  color: white;
+  font-size: 20px;
+}
+#countdown {
+  font-size: 60px;
+  color: red;
+  display: none;
+}
+#jumpscare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 99;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
