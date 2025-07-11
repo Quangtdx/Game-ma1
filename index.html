@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <title>Web Horror Intro</title>
@@ -17,16 +17,19 @@
     <button id="nextBtn">Tiếp tục</button>
   </div>
 
-  <div id="whiteout"></div>
+  <div id="whiteout" style="display:none;"></div>
+
   <div id="room" style="display:none;">
     <p id="room-msg"></p>
     <button id="finishBtn">Ấn vào đây</button>
   </div>
 
-  <div id="countdown"></div>
-  <img id="jumpscare" src="assets/jumpscare.png" />
+  <div id="countdown" style="display:none;"></div>
+
+  <img id="jumpscare" src="assets/jumpscare.png" style="display:none;" />
   <audio id="scream" src="assets/scream.mp3"></audio>
   <audio id="creepy" src="assets/creepy.mp3" loop></audio>
+
   <script src="script.js"></script>
 </body>
 </html>
